@@ -18,8 +18,6 @@ from tensorflow.keras.models import load_model
 loaded_model = load_model('CNN_model.h5')
 
 def hard_predict(array):
-    # The 
-
     probability = loaded_model.predict(array)
     
     # Convert soft probability to hard prediction
@@ -34,9 +32,17 @@ def resize_image(image_array, target_size=(640, 640)):
     img_with_batch_dimension = np.expand_dims(resized_image, axis=0)
     return img_with_batch_dimension
 
-def image_process(path):
-    img=cv2.imread(path)
+def image_process(img):
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     img=resize_image(img)
-    return img    
+    return img
 
+def prediction_output(img):
+    # Read the image
+    img = image_process(img)
+    # Predict the class
+    prediction = hard_predict(img)
+    if prediction == 1:
+        return "ripe"
+    else:
+        return "unripe"
