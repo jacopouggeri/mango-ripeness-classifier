@@ -12,4 +12,7 @@ docker start 213ecbe2edea
 docker attach notebook
 ```
 
-Link to the trained classification model: https://drive.google.com/drive/folders/1CiyeC7w9OeSrgPICcR-G1VeTi350xCgq?usp=sharing
+```sh
+Link to the trained classification model:
+https://drive.google.com/drive/folders/1CiyeC7w9OeSrgPICcR-G1VeTi350xCgq?usp=sharing
+```
