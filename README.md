@@ -14,5 +14,5 @@ docker attach notebook
 
 ```sh
 Link to the trained classification model:
-https://drive.google.com/drive/folders/1CiyeC7w9OeSrgPICcR-G1VeTi350xCgq?usp=sharing
 ```
+https://drive.google.com/drive/folders/1CiyeC7w9OeSrgPICcR-G1VeTi350xCgq?usp=sharing
